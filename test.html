@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Cookies</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    body ul{
+        border-radius: 20px;
+        padding: 4rem;
+        background-color: lightblue;
+        transition: background-color .5s ease-in-out;
+    }
+    ul li{
+        padding: 20px;
+        margin-top: 10px;
+    }
+    body ul:hover{
+        background-color: lightgreen;
+    }
+
+    .fav{
+        background: rgb(226, 153, 153);
+        border-radius: 10px;
+    }
+    h5{
+        font-weight: 300;
+    }
+    .nanfav {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        display: block;
+    }
+
+    /* Hide the .nanfav div when the parent ul is hovered */
+    ul:hover .nanfav {
+        opacity: 0;
+        display: none;
+        /* visibility: hidden; */
+    }
+</style>
+<body>
+    
+    <ul><h2>Ye hai movies list </h2>
+        <h5>rang wali meri pasandida hai</h5>
+        <li class="fav">phir hera pheri </li>
+        <li  class="fav">RED</li>
+        <div class="nanfav">
+        <li>abcd</li>
+        <li>abcd2</li>
+        <li>abcd3</li>
+    </div>
+    </ul>
+
+    <script>
+        let ul=document.querySelector("ul");
+        let div=document.querySelector(".nanfav");
+        // ul.addEventListener("mouseenter",()=>{
+        //     div.style.display="none";
+        //     console.log("nahi bol sakti thi");
+        // });
+        // ul.addEventListener("mouseleave",()=>{
+        //     div.style.display="inline-block";
+        //     console.log("bolne lagi");
+        // });
+    </script>
+</body>
+</html>

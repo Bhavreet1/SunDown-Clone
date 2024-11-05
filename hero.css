@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 5%;
+}
+.hero1{
+height: 30vw;
+width: 30vw;
+position: absolute;
+background-color: orangered;
+
+filter: blur(20px);
+border-radius: 50%;
+animation: anime 3s ease infinite alternate;
+}
+.hero2{
+position: absolute;
+border-radius: 50%;
+height: 30vw;
+width: 30vw;
+filter: blur(20px);
+background-color: orangered;
+
+animation: anime2 3s ease infinite alternate;
+}
+@keyframes anime {
+    from{
+        transform: translate(10%,10%);
+    }
+    to{
+        transform: translate(-10%,-10%);
+    }
+}
+@keyframes anime2 {
+    from{
+        transform: translate(-20%,-20%);
+    }
+    to{
+        transform: translate(10%,10%);
+    }
+}

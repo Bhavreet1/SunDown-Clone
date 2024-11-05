@@ -1,0 +1,34 @@
+/* swiper effect */
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255); */
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper{
+    /* justify-self: center; */
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: scroll;
+    scroll-snap-type:x mandatory;
+    gap: 20px;
+    /* transition:all 10\s ease-in-out; */
+}
+.card{
+    scroll-snap-align:center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    flex-shrink: 0;
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 14px;
+    text-align: center;
+}
